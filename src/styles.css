@@ -1,1 +1,209 @@
 /* You can add global styles to this file, and also import other style files */
+/**
+*  Template Name: Munter
+*  Template URL: https://templatemag.com/munter-bootstrap-one-page-template/
+*  Author: TemplateMag.com
+*  License: https://templatemag.com/license/
+*/
+
+.font-thin {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+}
+
+.font-semibold {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+}
+
+.font-light {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+}
+
+* {
+  position: relative;
+}
+
+.breaker {
+  clear: both;
+  font-size: 1px;
+  line-height: 1px;
+  height: 1px;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #2f2f2f  !important;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: normal;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+.navbar {
+  background-color: rgba( 255, 255, 2555, .0);
+  border-bottom: 0 none;
+  font-size: 12px;
+  transition: .25s all linear;
+}
+
+
+
+.navbar .nav a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.navbar .nav a:hover, .navbar .nav a:focus {
+  background: none;
+}
+.navbar .active a {
+  border-bottom: 2px solid #1abc9c;
+}
+
+.navbar-scrolled {
+  background-color: rgba( 0, 0, 0, .5);
+}
+
+
+
+.navbar-toggle i {
+  color: #fff;
+  font-size: 22px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #process .content-row h2 {
+    min-height: 6em;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-collapse {
+    background-color: rgba( 0, 0, 0, .8);
+  }
+}
+
+:focus {
+  outline: none;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+.slide {
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-bottom: 65px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+#intro {
+  color: #ffffff;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  background-attachment: relative;
+  background-position: center center;
+}
+
+#intro h1 {
+  padding-top: 130px;
+}
+
+@media (max-width: 991px) {
+  #intro {
+    background-position: -70% 0, 170% 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #intro {
+    background-image: none;
+  }
+}
+
+#home-row-1, #home-row-2 {
+  padding-top: 25px;
+}
+
+#home-row-1 h1 {
+  font-size: 54px;
+}
+
+#home-row-1 h4 {
+  font-size: 32px;
+}
+
+#home-row-2 {
+  font-size: 25px;
+}
+
+#home-row-2 .col-12 {
+  height: 232px;
+  padding-top: 30px;
+}
+
+#home-row-2 .col-12 .home-hover {
+  height: 166px;
+  overflow: hidden;
+  padding-top: 26px;
+  transition: all ease-in .5s;
+}
+
+#home-row-2 .col-12 .home-hover:hover {
+  height: 166px;
+  padding-top: 0;
+}
+
+@media (max-width: 767px) {
+  #home-row-1, #home-row-2 {
+    padding-top: 16px;
+  }
+  #home-row-1 h1 {
+    font-size: 35px;
+  }
+  #home-row-1 h4 {
+    font-size: 21px;
+  }
+  #home-row-2 {
+    font-size: 16px;
+  }
+}
+
+#about-us {
+  background-color: #1abc9c;
+  color: #e4e6e5;
+  padding-top: 90px;
+}
+
+.title-row {
+  font-size: 45px;
+  padding-bottom: 50px;
+}
+
+.line-row .hr {
+  background-color: #e4e6e5;
+  height: 5px;
+  margin: 0 auto;
+  width: 33%;
+}
+

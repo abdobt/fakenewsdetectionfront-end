@@ -1,0 +1,60 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" [routerLink]="['/']">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/nlp']">NLP</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/sentimentanalysis']">Sentiment Analysis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/fakenewsdetection']" routerLinkActive="active">Fake news detecion</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container" style="background-color: white;">
+  <div class="row justify-content-center mt-5">
+  <div class="col-6" style="padding-top: 5%;">
+    <div class="form-group" >
+      <h5 for="exampleFormControlTextarea1">Test with your own text</h5>
+      <textarea [(ngModel)]="text" style="margin-top: 5%;" placeholder="Entrer votre texte"class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+    </div>
+    <div>
+      <button class="btn btn-primary" (click)="click()">Classify text</button>
+    </div>
+  </div>
+  <div class="col-6 " style="padding-top: 5%;">
+    <h5>Results</h5>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Tag</th>
+          <th scope="col">Confidence</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Positive</th>
+          <td>{{pos}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Négative</th>
+          <td>{{neg}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Middle</th>
+          <td>{{mid}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>

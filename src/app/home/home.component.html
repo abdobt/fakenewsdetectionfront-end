@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" [routerLink]="['/']">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/nlp']">NLP</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/sentimentanalysis']">Sentiment Analysis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/fakenewsdetection']" routerLinkActive="active">Fake news detecion</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="slide story" id="intro" data-slide="1">
+  <div class="container">
+    <div id="home-row-1" class="row clearfix">
+      <div class="col-12">
+        <img src="../../assets/ml.png">
+        <br>
+        <br>
+      </div>
+      <!-- /col-12 -->
+    </div>
+    <!-- /row -->
+    <div id="home-row-2" class="row clearfix">
+
+      <div class="col-12 col-sm-4">
+        <a [routerLink]="['/nlp']" class="smoothscroll navigation-slide-a"><div class="home-hover navigation-slide"><img src="../../assets/s02.png"></div><span>NLP</span></a>
+      </div>
+
+      <div class="col-12 col-sm-4">
+        <a [routerLink]="['/sentimentanalysis']" class="smoothscroll navigation-slide-a"><div class="home-hover navigation-slide"><img src="../../assets/s03.png"></div><span>Sentiment analysis</span></a>
+      </div>
+
+      <div class="col-12 col-sm-4">
+        <a [routerLink]="['/fakenewsdetection']" class="smoothscroll navigation-slide-a"><div class="home-hover navigation-slide"><img src="../../assets/s01.png"></div><span>Fake news detection</span></a>
+      </div>
+    </div>
+    <!-- /row -->
+  </div>
+  <!-- /container -->
+</div>
+<!-- /slide1 -->
