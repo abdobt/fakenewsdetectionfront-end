@@ -9,6 +9,7 @@ export class FakenewsService {
   constructor(private http:HttpClient) { }
   public detect(text)
   {
+    text=text.replace(/["']/g, "");
     let f={
       query:"{fakenewsdetection(text:\""+text+"\")}"
     }
